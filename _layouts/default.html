@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ambrox - Personal Portfolio Template">
+
+    <title>{{ page.title }}</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ 'assets/img/favicon.png' | relative_url }}" type="image/x-icon">
+
+    <!-- CSS -->
+    <link href="{{ 'assets/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/css/style.css' | relative_url }}" rel="stylesheet">
+
+</head>
+<body>
+
+    {% include header.html %}
+
+    <main>
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <!-- JS Files -->
+    <script src="{{ 'assets/js/jquery-3.6.0.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+
+</body>
+</html>
